@@ -2,10 +2,20 @@
 import Timer from './components/Timer.vue';
 import Board from './components/Board.vue';
 import Information from './components/Information.vue';
+import { readContract } from '@wagmi/core';
+// import { USDTAbi } from '../abi/USDTAbi'
+
+const USDTAddress = '0x...';
+
+// const data = readContract({
+//   abi: USDTAbi,
+//   address: USDTAddress,
+//   functionName: 'symbol'
+// })
 </script>
 
 <template>
-  <Timer startTime="startTime" endTime="endTime"/>
+  <Timer startTime="startTime" endTime="endTime" />
   <Board />
   <Information />
 </template>
